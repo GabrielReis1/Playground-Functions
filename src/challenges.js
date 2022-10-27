@@ -1,7 +1,21 @@
 // Desafio 1
-function compareTrue() {
-  // iniciando meu projeto!
+function compareTrue(animal1, animal2) {
+  let result;
+
+  if (animal1 === 'girafa' && animal2 === 'elefante') {
+    result = true;
+  } else if (animal1 === 'elefante' && animal2 === 'girafa') {
+    result = true;
+  } else if(animal1 === 'girafa' && animal2 === 'girafa'){
+
+  }
+  else {
+    result = false;
+  }
+  return result;
 }
+
+console.log(compareTrue('elefante', 'elefante'));
 
 // Desafio 2
 function calcArea() {
