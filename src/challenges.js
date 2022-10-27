@@ -22,12 +22,15 @@ function splitSentence(frase) {
   const fraseSeparada = frase.split(' ');
   return fraseSeparada;
 }
-console.log(splitSentence('foguete'));
 // Desafio 4
-function concatName() {
-  // seu código aqui
-}
+function concatName(array) {
+  const primeiroNome = array[0];
+  const ultimoNome = array[array.length - 1];
 
+  let result = `${ultimoNome}, ${primeiroNome}`;
+  return result;
+}
+console.log(concatName(['captain', 'my', 'captain']));
 // Desafio 5
 function footballPoints() {
   // seu código aqui
