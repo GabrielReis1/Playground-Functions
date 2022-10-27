@@ -6,22 +6,19 @@ function compareTrue(animal1, animal2) {
     result = true;
   } else if (animal1 === 'elefante' && animal2 === 'girafa') {
     result = true;
-  } else if(animal1 === 'girafa' && animal2 === 'girafa'){
-
-  }
-  else {
+  } else {
     result = false;
   }
   return result;
 }
-
-console.log(compareTrue('elefante', 'elefante'));
+console.log(compareTrue('girafa', 'elefante'));
 
 // Desafio 2
-function calcArea() {
-  // seu código aqui
+function calcArea(base, height) {
+  let area = (base * height) / 2;
+  return area;
 }
-
+console.log(calcArea(51, 1));
 // Desafio 3
 function splitSentence() {
   // seu código aqui
