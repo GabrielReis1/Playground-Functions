@@ -1,8 +1,13 @@
 // Desafio 1
-function compareTrue() {
-  // seu código aqui
+function compareTrue(animal1, animal2) {
+  let result;
+  if (animal1 === true && animal2 === true) {
+    result = true;
+  } else {
+    result = false;
+  }
+  return result;
 }
-
 // Desafio 2
 function calcArea(base, height) {
   let area = (base * height) / 2;
@@ -28,22 +33,10 @@ function footballPoints(wins, ties) {
   return totalPoints;
 }
 // Desafio 6
-function highestCount(array) {
-  let higherNumber = array[0];
-  let counter = 0;
-
-  for (let index = 0; index < array.length; index += 1) {
-    if (array[index] > higherNumber) {
-      higherNumber = array[index];
-    }
-
-    if (array[index] === higherNumber) {
-      counter += 1;
-    }
-  }
-  return counter;
+function highestCount() {
+  // seu código aqui
 }
-console.log(highestCount([0, 4, 4, 4, 9, 2, 1]));
+
 // Desafio 7
 function catAndMouse() {
   // seu código aqui
@@ -53,7 +46,7 @@ function catAndMouse() {
 function fizzBuzz() {
   // seu código aqui
 }
-
+console.log(fizzBuzz([2, 15, 7, 9, 45]));
 // Desafio 9
 function encode() {
   // seu código aqui
